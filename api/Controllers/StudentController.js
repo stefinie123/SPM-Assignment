@@ -2,6 +2,7 @@ var mongoose = require('../DBConfig/DBConfig');
 var StudentSchema = mongoose.model('Student');
 
 var studentController = function () {
+    //add student details function, inputs: JSON object of student type
     this.addStudent = function (studentInstance) {
         // console.log(studentInstance);
         return new Promise(function(resolve, reject){
@@ -23,6 +24,7 @@ var studentController = function () {
         });
     }
 
+    //get all registered students from the db
     this.getStudents = function () {
         return new Promise(function (resolve, reject) {
             StudentSchema.find().exec().then(function (studentData) {
@@ -33,6 +35,7 @@ var studentController = function () {
         });
     }
 
+    //getting a single student by id
     this.getStudent = function (id) {
         return new Promise(function (resolve, reject) {
             StudentSchema.find({_id: id}).exec().then(function (student) {
@@ -43,6 +46,7 @@ var studentController = function () {
         });
     }
 
+    //search students by IT number
     this.getByITNo = function (ITNo) {
         return new Promise(function (resolve, reject) {
             StudentSchema.find({ITNo: ITNo}).exec().then(function (student) {
@@ -53,6 +57,7 @@ var studentController = function () {
         });
     }
 
+    //update student details
     this.updateStudent = function (id, student) {
         return new Promise(function (resolve, reject) {
             StudentSchema.update({_id: id}, student).then(function () {
@@ -63,6 +68,7 @@ var studentController = function () {
         });
     }
 
+    //deleting students
     this.deleteStudent = function (id) {
         return new Promise(function (resolve, reject) {
             StudentSchema.remove({_id: id}).then(function () {

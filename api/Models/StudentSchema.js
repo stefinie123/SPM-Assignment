@@ -1,6 +1,8 @@
+//import mongoose module
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+//schema definition
 const StudentScheme = new Schema({
     ITNo: {
         type: String,
