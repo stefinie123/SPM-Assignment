@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 class Sidebar extends Component {
   render() {
     return (
-        <div class="sidenav">
-            <Link to="/addDrug">Add Drug</Link>
-            <Link to="/addBatch">Add Batch</Link>
-            <Link to="/viewDrug">View Drug</Link>
-            <Link to="/viewBatch">View Batch</Link>
-        </div>
+      <div class="sidenav">
+        <Link to="/">Form 1-1</Link>
+        <Link to="/">---------</Link>
+        <Link to="/">---------</Link>
+        <Link to="/">--------</Link>
+      </div>
     );
   }
 }

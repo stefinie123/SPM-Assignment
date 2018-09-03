@@ -9,7 +9,7 @@ export default () => {
         new Date().getMonth() +
         "/" +
         new Date().getDate()}{" "}
-      HIS Pharmacy System
+      Industrial Training Unit-SLIIT
     </footer>
   );
 };

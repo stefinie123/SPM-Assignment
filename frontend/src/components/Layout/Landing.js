@@ -10,26 +10,17 @@ class Landing extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <h1 className="display-3 mb-4">Pharmacy System</h1>
+                <h1 className="display-3 mb-4">Industrial Training Unit</h1>
                 <hr />
-                <Link to="/vapp">
+                <Link to="/">
                   <a href="login.html" className="btn btn-lg btn-light">
-                    Employee Handling 
+                    Login
                   </a>
                 </Link>
-                <Link to="/addDrug">
+
+                <Link to="/">
                   <a href="login.html" className="btn btn-lg btn-light">
-                    Drug Handling
-                  </a>
-                </Link>
-                <Link to="/issue">
-                  <a href="login.html" className="btn btn-lg btn-light">
-                    Issue Drugs
-                  </a>
-                </Link>
-                <Link to="/payment">
-                  <a href="login.html" className="btn btn-lg btn-light">
-                    Payment Handling
+                    SignUp
                   </a>
                 </Link>
               </div>
