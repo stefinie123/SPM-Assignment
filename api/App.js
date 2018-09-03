@@ -2,7 +2,6 @@ const express = require("express");
 var bodyParser = require("body-parser");
 const cors = require("cors");
 var routes = require("./Routes");
-var mongoose = require("mongoose");
 
 var app = express();
 
